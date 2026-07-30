@@ -1,0 +1,61 @@
+<svg viewBox="0 0 1200 360" width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="50%" stop-color="#161b22"/>
+      <stop offset="100%" stop-color="#1c2128"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#3b3018" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rockGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b7355" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#4a3f2a" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="360" fill="url(#glow)"/>
+
+  <!-- Decorative drill lines -->
+  <line x1="60" y1="0" x2="60" y2="360" stroke="#e3b341" stroke-width="2" opacity="0.08"/>
+  <line x1="1140" y1="0" x2="1140" y2="360" stroke="#e3b341" stroke-width="2" opacity="0.08"/>
+
+  <!-- Rock/ore polygons scattered, low opacity, avoiding text zone -->
+  <polygon points="70,40 110,20 140,45 120,75 75,70" fill="url(#rockGrad)" stroke="#8b7355" stroke-width="1" opacity="0.35"/>
+  <polygon points="1020,300 1060,280 1095,305 1075,335 1030,330" fill="url(#rockGrad)" stroke="#8b7355" stroke-width="1" opacity="0.35"/>
+  <polygon points="130,290 165,270 195,295 175,325 135,320" fill="url(#rockGrad)" stroke="#8b7355" stroke-width="1" opacity="0.3"/>
+  <polygon points="1050,40 1090,25 1120,50 1100,80 1055,72" fill="url(#rockGrad)" stroke="#8b7355" stroke-width="1" opacity="0.3"/>
+
+  <!-- Drill bit motif top-left -->
+  <g opacity="0.25" stroke="#e3b341" stroke-width="2" fill="none">
+    <circle cx="95" cy="180" r="30"/>
+    <circle cx="95" cy="180" r="18"/>
+    <line x1="95" y1="150" x2="95" y2="210"/>
+    <line x1="65" y1="180" x2="125" y2="180"/>
+  </g>
+
+  <!-- Drill bit motif bottom-right -->
+  <g opacity="0.2" stroke="#e3b341" stroke-width="2" fill="none">
+    <circle cx="1105" cy="185" r="26"/>
+    <circle cx="1105" cy="185" r="14"/>
+  </g>
+
+  <!-- Subtle circular sparks -->
+  <circle cx="200" cy="60" r="3" fill="#e3b341" opacity="0.4"/>
+  <circle cx="980" cy="90" r="2.5" fill="#e3b341" opacity="0.35"/>
+  <circle cx="220" cy="310" r="2" fill="#e3b341" opacity="0.3"/>
+  <circle cx="1000" cy="250" r="3" fill="#e3b341" opacity="0.3"/>
+
+  <!-- Headline -->
+  <text x="600" y="160" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="58.0" font-weight="700" fill="#ffffff">
+    <tspan x="600" dy="0">Drill Blocks</tspan>
+    <tspan x="600" dy="66">Brainrots Script</tspan>
+  </text>
+
+  <!-- Tagline -->
+  <text x="600" y="270" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" fill="#c9d1d9" font-size="20.5">
+    Automates drill blocks for Brainrots players — clears rocks and grinds resources hands-free.
+  </text>
+</svg>
